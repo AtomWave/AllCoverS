@@ -1,8 +1,8 @@
 {
-	"name": "fls-start",
-	"version": "3.0.0",
+	"name": "AllCoverS",
+	"version": "1.0.0",
 	"description": "Start template with Gulp and Webpack",
-	"author": "FLS",
+	"author": "NEW",
 	"private": true,
 	"license": "",
 	"type": "module",
