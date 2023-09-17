@@ -47,15 +47,15 @@
 	}
 	// .header__menu
 	&__menu {
-		// display: flex;
 		position: absolute;
-		top: 120px;
+		top: -120px; /* меню прячем под хедер */
 		left: 0;
 		width: 100%;
 		height: 60px;
-		opacity: 0; /* По умолчанию скрываем меню */
-		visibility: hidden;
-		transition-property: opacity, visibility; /* Важно чтобы transition применялось к обоим свойствам */
+		background-color: #fff;
+		// opacity: 0; /* По умолчанию скрываем меню */
+		// visibility: hidden;
+		// transition-property: opacity, visibility; /* Важно чтобы transition применялось к обоим свойствам */
 		transition-duration: 0.2s; /* Добавляем анимацию 0.3 сек. */
 		transition-delay: 0.15s; /* Добавляем задержку в 0.15 сек. */
 	}
@@ -155,11 +155,15 @@
 
 .menu-open {
 	.header__menu {
-		opacity: 1; /* Показываем меню при клике на бургер */
-		visibility: visible;
+		// opacity: 1; /* Показываем меню при клике на бургер */
+		// visibility: visible;
+		top: 120px; /* Меню выезжает при клике на бургер */
 	}
 	.slider {
 		margin-top: 150px;
+	}
+	.series {
+		margin-top: 130px;
 	}
 }
 
@@ -179,10 +183,6 @@
 		}
 	}
 }
-
-
-
-
 
 //====================================================================================================
 

@@ -1,0 +1,149 @@
+.series {
+	flex: 1 1 auto;
+	margin: 80px 0px 50px 0px;
+	font-size: 1.7vh;
+	transition-duration: 0.2s; /* Добавляем анимацию 0.3 сек. */
+	transition-delay: 0.15s; /* Добавляем задержку в 0.15 сек. */
+	// .series__container
+	&__container {
+	}
+}
+
+.frontier {
+	&::before {
+		content: "";
+		display: block;
+		height: 2px;
+		width: 100%;
+		background-color: rgb(149, 143, 143);
+		margin-bottom: 40px;
+	}
+}
+
+.series-part {
+	display: flex;
+	margin-bottom: 30px;
+	// .series-part__image
+	&__image {
+		margin-right: 60px;
+		height: 300px;
+		width: 300px;
+	}
+	// .series-part__section
+	&__section {
+	}
+	// .series-part__features
+	&__features {
+	}
+}
+
+.series-side {
+	padding-top: 30px;
+	h4 {
+		margin-bottom: 20px;
+	}
+	// .series-side__title
+	&__title {
+		font-size: 3vh;
+		font-weight: 900;
+	}
+	// .series-side__text
+	&__text {
+		text-indent: 30px;
+		line-height: 1.4;
+		margin-bottom: 20px;
+	}
+}
+.features-product {
+	margin-bottom: 20px;
+	// .features-product__caption
+	&__caption {
+		text-indent: 30px;
+		font-weight: 700;
+	}
+	// .features-product__features-list
+	&__features-list {
+		padding-left: 50px;
+	}
+	// .features-product__item
+	&__item {
+	}
+	// .features-product__note
+	&__note {
+	}
+}
+
+.product-item {
+	position: relative;
+	margin-bottom: 10px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		height: 6px;
+		width: 6px;
+		left: -18px;
+		top: 25%;
+		margin-right: 10px;
+		background-color: #000;
+	}
+}
+
+.series-sizes {
+	display: flex;
+	justify-content: space-between;
+
+	// .series-sizes__shapes
+	&__shapes {
+	}
+	// .series-sizes__series-slider
+	&__series-slider {
+	}
+}
+.shapes-price {
+	// .shapes-price__synopsis
+	&__synopsis {
+		margin-bottom: 15px;
+	}
+	// .shapes-price__shapes
+	&__shapes {
+		margin-bottom: 18px;
+		padding-left: 15px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	// .shapes-price__chapter
+	&__chapter {
+		margin-bottom: 12px;
+	}
+	// .shapes-price__price-list
+	&__price-list {
+		padding-left: 20px;
+	}
+	// .shapes-price__item
+	&__item {
+	}
+}
+.mini-slider {
+	width: 60%;
+	height: auto;
+	.swiper-pagination-bullet {
+		width: 12px;
+		height: 12px;
+	}
+	.swiper-button-prev,
+	.swiper-button-next{
+		height: 30px;
+		width: 30px;
+	}
+	// .mini-slider__container
+	&__container {
+	}
+}
+
+.mini-slider-image {
+	min-height: 400px;
+}

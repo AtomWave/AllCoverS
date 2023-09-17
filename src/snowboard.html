@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"AllCovers/Snowboard"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="series">
+			<div class="series__container">
+				<div class="series-part">
+					<div class="series-part__image">
+						<p class="thumbnail">
+							<a href="#">
+								<img src="@img\Slaider\10.jpg" alt="">
+							</a>
+						</p>
+					</div>
+					<div class="series-part__section series-side">
+						<h4>
+							<a class="series-side__title" href="">Snowboard series</a>
+						</h4>
+						<p class="series-side__text">Чехлы для перевозки сноуборд оборудования. Вместительные чехлы с бортом позволяют перевозить сноуборд с креплениями, ботинки и еще что-нибудь. Для перчаток и маски есть отдельный карман.
+						</p>
+						<div class="series-part__features features-product">
+							<h4 class="features-product__caption">Основные характеристики и оснащение:</h4>
+							<ul class="features-product__features-list">
+								<li class="features-product__item product-item">Материал чехла Оксфорд 1680</li>
+								<li class="features-product__item product-item">Пеноматериал дна и борта 5 мм</li>
+								<li class="features-product__item product-item">Крупная пластиковая молния с двумя бегунками</li>
+								<li class="features-product__item product-item">Ручки и съёмный плечевой ремень для переноски</li>
+								<li class="features-product__item product-item">Внутренние ремни для фиксации доски</li>
+								<li class="features-product__item product-item">Карман для аксессуаров с внешним доступом </li>
+							</ul>
+						</div>
+						<p class="features-product__note">Серия шьётся под заказ</p>
+					</div>
+				</div>
+				<div class="frontier"></div>
+				<div class="series-sizes">
+					<div class="series-sizes__shapes shapes-price">
+						<!-- <h4 class="shapes-price__synopsis">Доступная линейка размеров и стоимость:</h4> -->
+						<div class="shapes-price__shapes">
+							<h4 class="shapes-price__chapter">Размеры:</h4>
+							<ul class="shapes-price__price-list">
+								<li class="shapes-price__item product-item">150/35/13 см</li>
+								<li class="shapes-price__item product-item">155/35/13 см</li>
+								<li class="shapes-price__item product-item">160/35/13 см</li>
+								<li class="shapes-price__item product-item">165/35/13 см</li>
+								<li class="shapes-price__item product-item">170/35/13 см</li>
+							</ul>
+						</div>
+						<div class="shapes-price__shapes">
+							<h4 class="shapes-price__chapter">Расцветки:</h4>
+							<ul class="shapes-price__price-list">
+								<li class="shapes-price__item product-item">Чёрный</li>
+								<li class="shapes-price__item product-item">Оливковый</li>
+								<li class="shapes-price__item product-item">Бежевый</li>
+							</ul>
+						</div>
+					</div>
+					<div class="series-sizes__series-slider mini-slider">
+						<div class="mini-slider__container swiper-content">
+							<!-- главный контейнер слайдера -->
+							<div class="swiper-content__slider-image  image-slider swiper-container">
+								<!-- Обязательная оболочка -->
+								<div class="image-slider__wrapper swiper-wrapper">
+									<!-- Сдайды -->
+									<div class="image-slider__slide swiper-slide">
+										<!-- Контент внутри слайда -->
+										<div class="image-slider__image mini-slider-image">
+											<img src="@img\Slaider\1.jpg" alt="картинка">
+										</div>
+									</div>
+									<div class="image-slider__slide swiper-slide">
+										<!-- Контент внутри слайда -->
+										<div class="image-slider__image mini-slider-image">
+											<img src="@img\Slaider\2.jpg" alt="картинка">
+										</div>
+									</div>
+									<div class="image-slider__slide swiper-slide">
+										<!-- Контент внутри слайда -->
+										<div class="image-slider__image mini-slider-image">
+											<img src="@img\Slaider\3.jpg" alt="картинка">
+										</div>
+									</div>
+
+
+									<!-- и так далее... -->
+								</div>
+
+								<!-- Добавляем, если нам нужна пагинация -->
+								<div class="swiper-pagination"></div>
+
+								<!-- Добавляем, если нам нужны стрелки управления -->
+								<div class="swiper-button-prev"></div>
+								<div class="swiper-button-next"></div>
+
+
+
+								<!-- Добавляем, если нам нужна полоса прокрутки (scrollbar) -->
+								<!-- <div class="swiper-scrollbar"></div> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	<!-- @@include('html/_popup.htm',{}) -->
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

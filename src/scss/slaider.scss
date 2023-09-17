@@ -51,7 +51,9 @@
 		// background-color: rgb(195, 193, 193);
 		background-color: black;
 		mask-image: url("data:image/svg+xml,%3Csvg version='1.0' xmlns='http://www.w3.org/2000/svg' width='512.000000pt' height='512.000000pt' viewBox='0 0 512.000000 512.000000' preserveAspectRatio='xMidYMid meet'%3E%3Cg transform='translate(0.000000,512.000000) scale(0.100000,-0.100000)'%0Afill='%23000000' stroke='none'%3E%3Cpath d='M4336 3832 c-10 -5 -412 -386 -893 -848 -482 -461 -879 -839 -883%0A-839 -5 0 -322 302 -705 670 -384 369 -713 682 -733 698 -29 22 -46 27 -92 27%0A-53 0 -56 -1 -74 -35 -21 -38 -47 -58 -87 -68 -20 -5 -28 -16 -38 -56 -7 -27%0A-21 -57 -32 -67 -10 -9 -19 -30 -19 -45 0 -22 -7 -32 -33 -45 -17 -9 -35 -22%0A-39 -28 -11 -15 -10 -87 1 -122 5 -16 12 -41 15 -56 5 -20 257 -268 891 -877%0A935 -899 908 -875 980 -857 26 7 2143 2031 2183 2087 27 39 28 74 4 114 -11%0A17 -94 101 -185 188 -146 139 -171 159 -204 163 -21 2 -46 0 -57 -4z'/%3E%3C/g%3E%3C/svg%3E");
+		-webkit-mask-image: url("data:image/svg+xml,%3Csvg version='1.0' xmlns='http://www.w3.org/2000/svg' width='512.000000pt' height='512.000000pt' viewBox='0 0 512.000000 512.000000' preserveAspectRatio='xMidYMid meet'%3E%3Cg transform='translate(0.000000,512.000000) scale(0.100000,-0.100000)'%0Afill='%23000000' stroke='none'%3E%3Cpath d='M4336 3832 c-10 -5 -412 -386 -893 -848 -482 -461 -879 -839 -883%0A-839 -5 0 -322 302 -705 670 -384 369 -713 682 -733 698 -29 22 -46 27 -92 27%0A-53 0 -56 -1 -74 -35 -21 -38 -47 -58 -87 -68 -20 -5 -28 -16 -38 -56 -7 -27%0A-21 -57 -32 -67 -10 -9 -19 -30 -19 -45 0 -22 -7 -32 -33 -45 -17 -9 -35 -22%0A-39 -28 -11 -15 -10 -87 1 -122 5 -16 12 -41 15 -56 5 -20 257 -268 891 -877%0A935 -899 908 -875 980 -857 26 7 2143 2031 2183 2087 27 39 28 74 4 114 -11%0A17 -94 101 -185 188 -146 139 -171 159 -204 163 -21 2 -46 0 -57 -4z'/%3E%3C/g%3E%3C/svg%3E");
 		mask-size: contain;
+		-webkit-mask-size:contain;
 		// transition-delay: 0.15s; /* Добавляем задержку в 0.15 сек. */
 		height: 50px;
 		width: 50px;
@@ -75,6 +77,8 @@
 		transform: rotate(-90deg);
 		right: 13px;
 	}
+
+	
 	// .image-slider__wrapper
 	&__wrapper {
 	}
@@ -126,4 +130,5 @@
 	.swiper-pagination-bullet-active {
 		background-color: #000;
 	}
+
 }

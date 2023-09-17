@@ -46,6 +46,8 @@ $mainColor: #000;
 @import "base/null";
 
 body {
+	// opacity:0;
+	// transition:.5s;
 	color: $mainColor;
 	// Скролл заблокирован
 	.lock & {
@@ -79,6 +81,8 @@ body {
 		@if ($maxWidthContainer>0) {
 			max-width: rem($maxWidthContainer);
 			box-sizing: content-box;
+			-moz-box-sizing: content-box;
+			-webkit-box-sizing: content-box;
 			margin: 0 auto;
 		}
 		@if ($containerPadding>0) {
@@ -123,6 +127,7 @@ body {
 
 // Подключение стилей отдельных страниц
 @import "home";
+@import "characteristics";
 
 // Основной блок страницы ====================================================================================================
 .page {
