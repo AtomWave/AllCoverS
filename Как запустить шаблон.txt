@@ -62,3 +62,7 @@ npm install sass gulp-sass --save-dev
 Решени:
 npm install --global windows-build-tools
 --------------------------------------
+
+
+красивая тень для карточки 
+box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
