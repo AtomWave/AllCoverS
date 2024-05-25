@@ -1,24 +1,25 @@
 .slider {
 	height: auto;
-	margin-top: 100px;
+	margin: 20px 0 40px;
+	padding: 0 0.9375rem;
 	transition-duration: 0.2s; /* Добавляем анимацию 0.3 сек. */
 	transition-delay: 0.15s; /* Добавляем задержку в 0.15 сек. */
-	&::before {
-		content: "";
-		display: block;
-		height: 2px;
-		width: 100%;
-		background-color: #000;
-		margin-bottom: 20px;
-	}
-	&::after {
-		content: "";
-		display: block;
-		height: 2px;
-		width: 100%;
-		background-color: #000;
-		margin-top: 20px;
-	}
+	// &::before {
+	// 	content: "";
+	// 	display: block;
+	// 	height: 2px;
+	// 	width: 100%;
+	// 	background-color: #000;
+	// 	margin-bottom: 20px;
+	// }
+	// &::after {
+	// 	content: "";
+	// 	display: block;
+	// 	height: 2px;
+	// 	width: 100%;
+	// 	background-color: #000;
+	// 	margin-top: 20px;
+	// }
 }
 .swiper-content {
 	height: 100%;
@@ -29,7 +30,9 @@
 	}
 	// .swiper-content__slider-image
 	&__slider-image {
-		box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+		box-shadow:
+			0 14px 28px rgba(0, 0, 0, 0.25),
+			0 10px 10px rgba(0, 0, 0, 0.22);
 		&:hover {
 			.swiper-button-prev,
 			.swiper-button-next,
@@ -53,7 +56,7 @@
 		mask-image: url("data:image/svg+xml,%3Csvg version='1.0' xmlns='http://www.w3.org/2000/svg' width='512.000000pt' height='512.000000pt' viewBox='0 0 512.000000 512.000000' preserveAspectRatio='xMidYMid meet'%3E%3Cg transform='translate(0.000000,512.000000) scale(0.100000,-0.100000)'%0Afill='%23000000' stroke='none'%3E%3Cpath d='M4336 3832 c-10 -5 -412 -386 -893 -848 -482 -461 -879 -839 -883%0A-839 -5 0 -322 302 -705 670 -384 369 -713 682 -733 698 -29 22 -46 27 -92 27%0A-53 0 -56 -1 -74 -35 -21 -38 -47 -58 -87 -68 -20 -5 -28 -16 -38 -56 -7 -27%0A-21 -57 -32 -67 -10 -9 -19 -30 -19 -45 0 -22 -7 -32 -33 -45 -17 -9 -35 -22%0A-39 -28 -11 -15 -10 -87 1 -122 5 -16 12 -41 15 -56 5 -20 257 -268 891 -877%0A935 -899 908 -875 980 -857 26 7 2143 2031 2183 2087 27 39 28 74 4 114 -11%0A17 -94 101 -185 188 -146 139 -171 159 -204 163 -21 2 -46 0 -57 -4z'/%3E%3C/g%3E%3C/svg%3E");
 		-webkit-mask-image: url("data:image/svg+xml,%3Csvg version='1.0' xmlns='http://www.w3.org/2000/svg' width='512.000000pt' height='512.000000pt' viewBox='0 0 512.000000 512.000000' preserveAspectRatio='xMidYMid meet'%3E%3Cg transform='translate(0.000000,512.000000) scale(0.100000,-0.100000)'%0Afill='%23000000' stroke='none'%3E%3Cpath d='M4336 3832 c-10 -5 -412 -386 -893 -848 -482 -461 -879 -839 -883%0A-839 -5 0 -322 302 -705 670 -384 369 -713 682 -733 698 -29 22 -46 27 -92 27%0A-53 0 -56 -1 -74 -35 -21 -38 -47 -58 -87 -68 -20 -5 -28 -16 -38 -56 -7 -27%0A-21 -57 -32 -67 -10 -9 -19 -30 -19 -45 0 -22 -7 -32 -33 -45 -17 -9 -35 -22%0A-39 -28 -11 -15 -10 -87 1 -122 5 -16 12 -41 15 -56 5 -20 257 -268 891 -877%0A935 -899 908 -875 980 -857 26 7 2143 2031 2183 2087 27 39 28 74 4 114 -11%0A17 -94 101 -185 188 -146 139 -171 159 -204 163 -21 2 -46 0 -57 -4z'/%3E%3C/g%3E%3C/svg%3E");
 		mask-size: contain;
-		-webkit-mask-size:contain;
+		-webkit-mask-size: contain;
 		// transition-delay: 0.15s; /* Добавляем задержку в 0.15 сек. */
 		height: 50px;
 		width: 50px;
@@ -64,10 +67,6 @@
 		transition-property: opacity, visibility; /* Важно чтобы transition применялось к обоим свойствам */
 		transition-duration: 0.2s; /* Добавляем анимацию 0.3 сек. */
 		transition-delay: 0.15s; /* Добавляем задержку в 0.15 сек. */
-
-		&:hover {
-			// background-color: black;
-		}
 	}
 	.swiper-button-prev {
 		transform: rotate(90deg);
@@ -78,9 +77,9 @@
 		right: 13px;
 	}
 
-	
 	// .image-slider__wrapper
 	&__wrapper {
+		height: 300px;
 	}
 	// .image-slider__slide
 	&__slide {
@@ -88,8 +87,7 @@
 	// .image-slider__image
 	&__image {
 		position: relative;
-		// @include adaptiveValue("min-height", 1840, 200, 5000, 319.98, 1);
-		min-height: 500px;
+		@include adaptiveValue("min-height", 1840, 200, 5000, 319.98, 1);
 		img {
 			width: 100%;
 			height: 100%;
@@ -102,20 +100,18 @@
 }
 
 .swiper-pagination {
-	bottom: 45px;
-	position: relative;
+	bottom: -40px;
+	position: absolute;
 	justify-content: center;
 	align-items: center;
 	display: flex;
 	z-index: 10;
-	margin-bottom: -20px;
+	left: 50%;
+	transform: translateX(-50%);
 	transition-duration: 0.2s; /* Добавляем анимацию 0.3 сек. */
 	transition-delay: 0.15s; /* Добавляем задержку в 0.15 сек. */
-	opacity: 0; /* По умолчанию скрываем подменю */
-	visibility: hidden;
-	transition-property: opacity, visibility; /* Важно чтобы transition применялось к обоим свойствам */
-	transition-duration: 0.2s; /* Добавляем анимацию 0.3 сек. */
-	transition-delay: 0.15s; /* Добавляем задержку в 0.15 сек. */
+	opacity: 1; /* По умолчанию скрываем подменю */
+
 	.swiper-pagination-bullet {
 		width: 20px;
 		height: 20px;
@@ -131,4 +127,14 @@
 		background-color: #000;
 	}
 
+	@media (min-width: $mobile) {
+		opacity: 0;
+		position: relative;
+		bottom: 40px;
+		margin-bottom: -20px;
+		visibility: hidden;
+		transition-property: opacity, visibility; /* Важно чтобы transition применялось к обоим свойствам */
+		transition-duration: 0.2s; /* Добавляем анимацию 0.3 сек. */
+		transition-delay: 0.15s; /* Добавляем задержку в 0.15 сек. */
+	}
 }
