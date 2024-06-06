@@ -13,6 +13,9 @@
 		"fonts": "gulp fonts --rewrite",
 		"deploy": "gulp deployFTP --build",
 		"zip": "gulp deployZIP --build",
+		"editorconfig": "editorconfig-cli",
+		"stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
+		"lint": "npm run editorconfig && npm run stylelint",
 		"devbuild": "gulp build --build --nowebp",
 		"tmp": "gulp -f gulpfile.tmp.js",
 		"bem": "fls-bemtree-from-html"
@@ -70,7 +73,10 @@
 		"webpack-stream": "latest"
 	},
 	"dependencies": {
+		"@htmlacademy/editorconfig-cli": "^3.0.0",
 		"jquery": "^3.7.1",
-		"simplebar": "latest"
+		"simplebar": "latest",
+		"stylelint": "^16.6.1",
+		"stylelint-config-htmlacademy": "^4.2.3"
 	}
 }
