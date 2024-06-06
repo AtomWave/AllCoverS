@@ -20,6 +20,10 @@
   // 	background-color: #000;
   // 	margin-top: 20px;
   // }
+
+  @media (min-width: $mobile) {
+    margin-top: 80px;
+  }
 }
 .swiper-content {
   height: 100%;
