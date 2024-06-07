@@ -22,7 +22,7 @@
   // }
 
   @media (min-width: $mobile) {
-    margin: 80px 0 40px;
+    margin: 90px 0 70px;
   }
 }
 .swiper-content {
@@ -71,19 +71,32 @@
     transition-property: opacity, visibility; /* Важно чтобы transition применялось к обоим свойствам */
     transition-duration: 0.2s; /* Добавляем анимацию 0.3 сек. */
     transition-delay: 0.15s; /* Добавляем задержку в 0.15 сек. */
+
+    @media (min-width: $mobile) {
+      top: calc(50% - 50px);
+    }
   }
   .swiper-button-prev {
     transform: rotate(90deg);
     left: 0;
+
+    @media (min-width: $mobile) {
+      left: 20px;
+    }
   }
   .swiper-button-next {
     transform: rotate(-90deg);
     right: 0;
+
+    @media (min-width: $mobile) {
+      right: 20px;
+    }
   }
 
   // .image-slider__wrapper
   &__wrapper {
-    height: 300px;
+    // height: 300px;
+    @include adaptiveValue("min-height", 1300, 200, 5000, 319.98, 1);
   }
   // .image-slider__slide
   &__slide {
@@ -91,11 +104,11 @@
   // .image-slider__image
   &__image {
     position: relative;
-    @include adaptiveValue("min-height", 1840, 200, 5000, 319.98, 1);
+    @include adaptiveValue("min-height", 1300, 200, 5000, 319.98, 1);
     img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: contain;
       position: absolute;
       top: 0;
       left: 0;
@@ -134,7 +147,7 @@
   @media (min-width: $mobile) {
     opacity: 0;
     position: relative;
-    bottom: 40px;
+    bottom: 50px;
     margin-bottom: -20px;
     visibility: hidden;
     transition-property: opacity, visibility; /* Важно чтобы transition применялось к обоим свойствам */
