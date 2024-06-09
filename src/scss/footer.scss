@@ -16,7 +16,7 @@
     padding: 30px 0;
 
     @media (min-width: $mobile) {
-      padding: 40px 0;
+      padding: 40px 20px;
       font-size: 2.2vh;
     }
   }
@@ -24,11 +24,6 @@
   &__contacts {
     display: flex;
     flex-direction: column;
-    margin-bottom: 12px;
-
-    @media (min-width: $mobile) {
-      margin-bottom: 20px;
-    }
   }
   // .footer__contacts-link
   &__contacts-link {
@@ -40,18 +35,6 @@
     @media (min-width: $mobile) {
       margin-bottom: 20px;
     }
-  }
-  // .footer__contacts-img
-  &__contacts-img {
-  }
-  // .footer__social
-  &__social {
-  }
-  // .footer__social-link
-  &__social-link {
-  }
-  // .footer__social-img
-  &__social-img {
   }
 }
 

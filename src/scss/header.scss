@@ -33,7 +33,7 @@
   }
   // .header__logo
   &__logo {
-    width: 240px;
+    width: auto;
     height: 100%;
     overflow: hidden;
     position: relative;
@@ -43,14 +43,14 @@
     align-items: center;
 
     @media (min-width: $mobile) {
-      width: 300px;
-      padding-left: 5px;
+      display: flex;
+      padding-left: 20px;
     }
   }
 
   // header__logo-link
   &__logo-link {
-    height: 80px;
+    height: 100%;
     display: flex;
     align-items: center;
     padding: 0 5px;
@@ -63,6 +63,10 @@
         height: 40px;
         width: 280px;
       }
+    }
+
+    @media (min-width: $mobile) {
+      height: 70px;
     }
   }
 
@@ -122,8 +126,8 @@
 .icon-menu {
   display: block;
   position: relative;
-  width: 35px;
-  height: 25px;
+  width: 40px;
+  height: 30px;
   cursor: pointer;
   z-index: 5;
   span,

@@ -38,11 +38,17 @@
       0 14px 28px rgba(0, 0, 0, 0.25),
       0 10px 10px rgba(0, 0, 0, 0.22);
     &:hover {
-      .swiper-button-prev,
-      .swiper-button-next,
       .swiper-pagination {
         opacity: 1; /* Показываем навигацию при ховере */
         visibility: visible;
+      }
+
+      @media (min-width: $mobileMedium) {
+        .swiper-button-prev,
+        .swiper-button-next {
+          opacity: 1; /* Показываем навигацию при ховере */
+          visibility: visible;
+        }
       }
     }
   }
