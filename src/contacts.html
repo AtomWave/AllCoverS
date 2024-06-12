@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"AllCovers/Контакты"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header.htm',{})
+    <main class="contacts">
+      <div class="contacts__container">
+        <section class="contacts__page">
+          <h2 class="contacts__title">Контакты</h2>
+          <address class="contacts__address">МКАД, 71-й километр, 16А, деревня Путилково, городской округ Красногорск, Московская область</address>
+          <div class="contacts__photobook">
+            <div class="contacts__image"><img src="@img\adress.jpg" alt=""></div>
+            <div class="contacts__image"><img src="@img\adress2.jpg" alt=""></div>
+          </div>
+        </section>
+        <section class="contacts__map map-container">
+          <iframe class="contacts__map-frame" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d665.6807231894954!2d37.394407533000255!3d55.86138014910478!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b5479d5c634733%3A0x54036562ccbccadc!2z0JzQmtCQ0JQgNzEg0LrQvCwg0J_Rg9GC0LjQu9C60L7QstC-LCDQnNC-0YHQutC-0LLRgdC60LDRjyDQvtCx0LsuLCAxNDM0NDE!5e0!3m2!1sru!2sru!4v1718224819084!5m2!1sru!2sru" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+      </div>
+    </main>
+    @@include('html/_footer.htm',{})
+  </div>
+  <!-- @@include('html/_popup.htm',{}) -->
+  @@include('html/_js.htm',{})
+</body>
+
+</html>

@@ -10,10 +10,8 @@
     color: #fff;
     font-weight: 700;
     font-size: 2vh;
-    display: inline-block;
-    // flex-direction: column;
-    // justify-content: center;
-    padding: 20px 0;
+
+    padding: 25px 0;
 
     @media (min-width: $mobile) {
       padding: 40px 20px;
@@ -22,18 +20,29 @@
   }
   // .footer__contacts
   &__contacts {
-    display: flex;
-    flex-direction: column;
+    display: inline-block;
   }
-  // .footer__contacts-link
-  &__contacts-link {
-    padding: 10px;
+
+  // .footer__contacts-item
+  &__contacts-item {
+    height: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 5px;
+
     &:last-child {
       margin: 0;
     }
+  }
+
+  // .footer__contacts-link
+  &__contacts-link {
+    display: block;
+    min-width: 222px;
+    padding: 10px;
 
     @media (min-width: $mobile) {
-      margin-bottom: 10px;
     }
   }
 }
