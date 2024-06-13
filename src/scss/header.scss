@@ -58,6 +58,7 @@
     img {
       height: 23px;
       width: 160px;
+      object-fit: contain;
 
       @media (min-width: $mobile) {
         height: 40px;

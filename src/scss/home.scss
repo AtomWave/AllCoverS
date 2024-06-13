@@ -23,10 +23,11 @@
   padding: 30px 0px 20px 0px;
   // .action-page__title
   &__title {
-    height: 80px;
     font-size: 4vh;
     font-weight: 900;
     padding-left: 30px;
+    margin-bottom: 50px;
+    text-align: center;
   }
 
   @media (min-width: $mobile) {
@@ -49,23 +50,28 @@
     display: block;
     height: 100%;
     max-width: 300px;
-    margin: 0 auto 20px;
+    margin: 0 auto 30px;
     text-align: center;
     cursor: pointer;
+    background-color: #000000;
+    transition-duration: 0.2s; /* Добавляем анимацию 0.3 сек. */
+
+    &:hover {
+      .action-part__image {
+        opacity: 1;
+      }
+    }
 
     @media (min-width: $mobileMedium) {
       float: left;
-      margin: 0 20px 0 0;
+      margin: 0 30px 0 0;
     }
   }
 
   // .action-part__image
   &__image {
     margin: 0px auto;
-
-    @media (min-width: $mobileMedium) {
-      max-width: 250px;
-    }
+    opacity: 0.6;
   }
 
   // .action-part__title
@@ -79,7 +85,7 @@
   // .action-part__text
   &__text {
     font-weight: 700;
-    font-size: 2.5vh;
+    font-size: 2vh;
     line-height: 1.3;
   }
 

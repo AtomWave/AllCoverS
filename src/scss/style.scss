@@ -51,6 +51,7 @@ body {
   // opacity:0;
   // transition:.5s;
   color: $mainColor;
+  background-color: #ffffff;
   // Скролл заблокирован
   .lock & {
     overflow: hidden;
