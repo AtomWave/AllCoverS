@@ -1,12 +1,9 @@
 .series {
   flex: 1 1 auto;
   margin: 40px 0px 50px 0px;
-  font-size: 1.4vh;
+  font-size: 15px;
   transition-duration: 0.2s; /* Добавляем анимацию 0.3 сек. */
   transition-delay: 0.15s; /* Добавляем задержку в 0.15 сек. */
-  // .series__container
-  &__container {
-  }
 
   // .series__series-type
   .series__series-type {
@@ -81,16 +78,16 @@
 
   // .series
   @media (min-width: $mobileSmall) {
-    font-size: 1.6vh;
+    font-size: 16px;
   }
 
   @media (min-width: $mobileMedium) {
-    font-size: 1.8vh;
+    font-size: 17px;
   }
 
   @media (min-width: $mobile) {
     margin-top: 100px;
-    font-size: 2vh;
+    font-size: 19px;
   }
 }
 
@@ -269,13 +266,23 @@
   }
 }
 
-.mini-slider-image {
+.image-slider__image.mini-slider-image {
   @media (min-width: $mobileMedium) {
     min-height: 250px;
   }
 
   @media (min-width: $mobile) {
     min-height: 300px;
+  }
+
+  img {
+    @media (min-width: $mobileMedium) {
+      min-height: 250px;
+    }
+
+    @media (min-width: $mobile) {
+      min-height: 300px;
+    }
   }
 }
 
