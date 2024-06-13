@@ -52,7 +52,6 @@
     max-width: 300px;
     margin: 0 auto 30px;
     text-align: center;
-    cursor: pointer;
     background-color: #000000;
     transition-duration: 0.2s; /* Добавляем анимацию 0.3 сек. */
 
@@ -80,7 +79,6 @@
     display: inline-block;
     font-size: 26px;
     font-weight: 900;
-    cursor: pointer;
   }
   // .action-part__text
   &__text {

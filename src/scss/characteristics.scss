@@ -481,7 +481,6 @@
     max-width: 300px;
     margin: 0 auto 30px;
     text-align: center;
-    cursor: pointer;
 
     @media (min-width: $mobileMedium) {
       float: left;
@@ -502,7 +501,6 @@
     display: inline-block;
     font-size: 26px;
     font-weight: 900;
-    cursor: pointer;
   }
   // .news-story__text
   &__text {
